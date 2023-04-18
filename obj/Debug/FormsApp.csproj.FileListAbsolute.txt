@@ -1,0 +1,12 @@
+C:\Dev\EETK\FormsApp\obj\Debug\FormsApp.csproj.AssemblyReference.cache
+C:\Dev\EETK\FormsApp\obj\Debug\FormsApp.csproj.SuggestedBindingRedirects.cache
+C:\Dev\EETK\FormsApp\obj\Debug\MuOp2023.Practice_01_02.DifferentButtons.resources
+C:\Dev\EETK\FormsApp\obj\Debug\MuOp2023.Practice_01_02.DifferentColors.resources
+C:\Dev\EETK\FormsApp\obj\Debug\MuOp2023.Practice_01_02.SelfTasks.resources
+C:\Dev\EETK\FormsApp\obj\Debug\MuOp2023.Practice_01_02.TranslateCmToM.resources
+C:\Dev\EETK\FormsApp\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Dev\EETK\FormsApp\obj\Debug\MuOp2023.Practice_01_02.Practice_01_02.resources
+C:\Dev\EETK\FormsApp\obj\Debug\MuOp2023.Practice_01_02.TwoButtons.resources
+C:\Dev\EETK\FormsApp\obj\Debug\MuOp2023.SelectPractice.resources
+C:\Dev\EETK\FormsApp\obj\Debug\FormsApp.csproj.GenerateResource.cache
+C:\Dev\EETK\FormsApp\obj\Debug\FormsApp.csproj.CoreCompileInputs.cache
