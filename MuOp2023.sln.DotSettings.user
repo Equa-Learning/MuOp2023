@@ -1,7 +1,9 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=MuOp2023_002FPractice_005F03_005F04_002FPractice_005F03_005F04/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=MuOp2023_002FPractice_005F05_005F06_002FPractice_005F05_005F06/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=MuOp2023_002FPractice_005F05_005F06_002FPractice_005F05_005F06/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=MuOp2023_002FPractice_005F07_005F08_002FPractice_005F07_005F08/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=MuOp2023_002FPractice_005F09_005F10_002FPractice_005F09_005F10/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=MuOp2023_002FSelectPractice/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=WindowsFormsApp1_002FPractice_005F01_005F02_002FDifferentButtons/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=WindowsFormsApp1_002FPractice_005F01_005F02_002FDifferentColors/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=WindowsFormsApp1_002FPractice_005F01_005F02_002FPractice_005F01_005F02/@EntryIndexedValue">True</s:Boolean>

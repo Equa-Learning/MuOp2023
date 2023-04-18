@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 
-namespace MuOp2023.Practice_07_08
+namespace MuOp2023.Practice_09_10
 {
-    partial class Practice0708
+    partial class Practice0910
     {
                 /// <summary>
         /// Required designer variable.
@@ -190,7 +190,7 @@ namespace MuOp2023.Practice_07_08
             this.listBox1.TabIndex = 16;
             this.listBox1.Visible = false;
             // 
-            // Practice0708
+            // Practice0910
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -210,8 +210,8 @@ namespace MuOp2023.Practice_07_08
             this.Controls.Add(this.computeButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Name = "Practice0708";
-            this.Text = "Practice_07_08";
+            this.Name = "Practice0910";
+            this.Text = "Practice_09_10";
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

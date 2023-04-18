@@ -35,6 +35,7 @@ namespace MuOp2023
             this.practice_03_04 = new System.Windows.Forms.Button();
             this.practice_05_06 = new System.Windows.Forms.Button();
             this.practice_07_08 = new System.Windows.Forms.Button();
+            this.practice_09_10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // practice_01_02
@@ -76,6 +77,18 @@ namespace MuOp2023
             this.practice_07_08.Text = "Практика 07-08";
             this.practice_07_08.UseVisualStyleBackColor = true;
             this.practice_07_08.Click += new System.EventHandler(this.practice_07_08_Click);
+            
+            
+            // 
+            // practice_09_10
+            // 
+            this.practice_09_10.Location = new System.Drawing.Point(28, 176);
+            this.practice_09_10.Name = "practice_09_10";
+            this.practice_09_10.Size = new System.Drawing.Size(147, 31);
+            this.practice_09_10.TabIndex = 3;
+            this.practice_09_10.Text = "Практика 09-10";
+            this.practice_09_10.UseVisualStyleBackColor = true;
+            this.practice_09_10.Click += new System.EventHandler(this.practice_09_10_Click);            
             // 
             // SelectPractice
             // 
@@ -86,6 +99,7 @@ namespace MuOp2023
             this.Controls.Add(this.practice_03_04);
             this.Controls.Add(this.practice_05_06);
             this.Controls.Add(this.practice_07_08);
+            this.Controls.Add(this.practice_09_10);
             this.Name = "SelectPractice";
             this.Text = "Выберите практику";
             this.ResumeLayout(false);
@@ -95,6 +109,7 @@ namespace MuOp2023
         private System.Windows.Forms.Button practice_03_04;
         private System.Windows.Forms.Button practice_05_06;
         private System.Windows.Forms.Button practice_07_08;
+        private System.Windows.Forms.Button practice_09_10;
 
         #endregion
     }

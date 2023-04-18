@@ -18,3 +18,4 @@ C:\Dev\EETK\MuOp2023\obj\Debug\MuOp2023.Practice_03_04.Practice0304.resources
 C:\Dev\EETK\MuOp2023\obj\Debug\MuOp2023.Practice_01_02.Practice0102.resources
 C:\Dev\EETK\MuOp2023\obj\Debug\MuOp2023.Practice_05_06.Practice0506.resources
 C:\Dev\EETK\MuOp2023\obj\Debug\MuOp2023.Practice_07_08.Practice0708.resources
+C:\Dev\EETK\MuOp2023\obj\Debug\MuOp2023.Practice_09_10.Practice0910.resources

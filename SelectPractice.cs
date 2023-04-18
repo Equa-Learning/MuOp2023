@@ -35,5 +35,11 @@ namespace MuOp2023
             var mainTaskForm = new Practice_07_08.Practice0708();
             mainTaskForm.Show();
         }
+
+        private void practice_09_10_Click(object sender, EventArgs e)
+        {
+            var mainTaskForm = new Practice_09_10.Practice0910();
+            mainTaskForm.Show();
+        }        
     }
 }
