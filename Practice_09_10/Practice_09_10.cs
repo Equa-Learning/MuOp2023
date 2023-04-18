@@ -22,6 +22,9 @@ namespace MuOp2023.Practice_09_10
         {
             [Description("Задача не задана")] NotSet,
             [Description("Определение характеристик числа")] NumberProperties,
+            [Description("Обмен местами первой и последней цифр")] FirstLastChanged,
+            [Description("Вывод cинуса через while")] WhileSinusFrom1To2,
+            [Description("Вывод cинуса через do")] DoSinusFrom1To2,
             //[Description("Числа, заканчивающиеся на 4")] EndOn4,
         }
 
@@ -76,6 +79,15 @@ namespace MuOp2023.Practice_09_10
                 case Tasks.NumberProperties:
                     labelsForTexBoxes = Task_NumberProperties(checksForInputs);
                     break;
+                case Tasks.FirstLastChanged:
+                    labelsForTexBoxes = Task_FirstLastChanged(checksForInputs);
+                    break;
+                case Tasks.DoSinusFrom1To2:
+                    labelsForTexBoxes = Task_SinusFrom1To2(checksForInputs, true);
+                    break;
+                case Tasks.WhileSinusFrom1To2:
+                    labelsForTexBoxes = Task_SinusFrom1To2(checksForInputs, false);
+                    break;
               
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -126,7 +138,60 @@ namespace MuOp2023.Practice_09_10
             return labelsForTexBoxes;
         }
 
+        private string[] Task_FirstLastChanged(List<TextBoxCheckDelegate> checksForInputs)
+        {
+            taskDefinition.Text =
+                $"Составить  программу  перестановки  первой  и  последней  цифр  введенного натурального числа. " +
+                $"Пусть  пользователем  введено  число  4538.  После  перестановки  первой и последней цифр " +
+                $"число станет таким: 8534.";
+            var labelsForTexBoxes = new[] { "Введите число" };
+            checksForInputs.AddRange(new TextBoxCheckDelegate[] {
+                TextBoxValidators.IsPositiveNumber, 
+            });
+            _action = () =>
+            {
+                var numberA = int.Parse(textBox1.Text);
 
+                var cipherQuantity = Convert.ToInt32(Math.Floor(Math.Log10(numberA)));
+                var firstCipher = Math.DivRem(numberA, (int) Math.Pow(10, cipherQuantity), out var remaining);
+                var lastCipher = remaining % 10;
+                var noFirstLast = numberA - firstCipher * (int) Math.Pow(10, cipherQuantity) - lastCipher;
+                var newFirstLast = lastCipher * (int) Math.Pow(10, cipherQuantity) + noFirstLast + firstCipher;
 
+                resultLabel.Text = $"Количество цифр {cipherQuantity+1}; Первая цифра числа {firstCipher}; Последняя цифра числа {lastCipher}; " +
+                                   $"Без первого и последнего {noFirstLast}; Поменяны первая и последняя {newFirstLast}";
+            };
+            return labelsForTexBoxes;
+        }
+
+        private string[] Task_SinusFrom1To2(List<TextBoxCheckDelegate> checksForInputs, bool useDo)
+        {
+            taskDefinition.Text =
+                $"Вывести таблицу значений функции y=sin(x), если х меняется от 1 до 2 с шагом 0.2. " +
+                (useDo ? "циклом DO" : "циклом WHILE");
+
+            _action = () =>
+            {
+                decimal currentX = 1;
+                switch (useDo)
+                {
+                    case true:
+                        do
+                        {
+                            resultLabel.Text += $"{currentX} : {Math.Sin((double)currentX):F3} \t|\t ";
+                            currentX += (decimal) 0.2;
+                        } while (currentX <= 2);
+                        break;
+                    default:
+                        while (currentX <= 2)
+                        {
+                            resultLabel.Text += $"{currentX} : {Math.Sin((double)currentX):F3} \t|\t ";
+                            currentX += (decimal) 0.2;
+                        };                        
+                        break;
+                }
+            };
+            return Array.Empty<string>(); 
+        }
     }
 }
