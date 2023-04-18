@@ -25,7 +25,7 @@ namespace MuOp2023.Practice_09_10
             [Description("Обмен местами первой и последней цифр")] FirstLastChanged,
             [Description("Вывод cинуса через while")] WhileSinusFrom1To2,
             [Description("Вывод cинуса через do")] DoSinusFrom1To2,
-            //[Description("Числа, заканчивающиеся на 4")] EndOn4,
+            [Description("Масса больших и обычных людей")] Mass,
         }
 
         private delegate void ComputeDelegate();
@@ -87,6 +87,9 @@ namespace MuOp2023.Practice_09_10
                     break;
                 case Tasks.WhileSinusFrom1To2:
                     labelsForTexBoxes = Task_SinusFrom1To2(checksForInputs, false);
+                    break;
+                case Tasks.Mass:
+                    labelsForTexBoxes = Task_Mass(checksForInputs);
                     break;
               
                 default:
@@ -192,6 +195,41 @@ namespace MuOp2023.Practice_09_10
                 }
             };
             return Array.Empty<string>(); 
+        }
+        
+        private string[] Task_Mass(List<TextBoxCheckDelegate> checksForInputs)
+        {
+            taskDefinition.Text =
+                $"Вариант 3.	Известна масса каждого человека из некоторой группы людей (15 человек). " +
+                $"Людей, имеющих массу более 100 кг, будем условно называть «большими». " +
+                $"Определить среднюю мас-су «больших» людей и среднюю массу всех остальных.";
+
+            _action = () =>
+            {
+                int massOfBig=0, massOfOther=0, countBig=0, countOther=0;
+                const int LIMIT = 100;
+                var R = new Random();
+                do
+                {
+                    var currentMass = R.Next(LIMIT/2, LIMIT+LIMIT/2);
+                    if (currentMass > LIMIT)
+                    {
+                        massOfBig += currentMass;
+                        countBig++;
+                    }
+                    else
+                    {
+                        massOfOther += currentMass;
+                        countOther++;
+                    }
+
+                    resultLabel.Text += $"{(currentMass > LIMIT? "[b]_":"")}{currentMass} \t\t ";
+                    
+                } while (countOther + countBig < 15);
+                
+                resultLabel.Text += $"\nAverage BIG{((double)massOfBig/(double)countBig):F3} \t|\t {((double)massOfOther/(double)countOther):F3}";
+            };
+            return Array.Empty<string>();
         }
     }
 }
